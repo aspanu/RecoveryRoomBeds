@@ -1,4 +1,5 @@
 import React from 'react';
+import Bed from './Bed.js';
 
 export default class BedList extends React.Component {
     getInitialState() {
@@ -12,6 +13,8 @@ export default class BedList extends React.Component {
             beds.push(<Bed bedNumber={i}/>);
         }
 
-        return <div>{beds}</div>;
+        return (
+            <div>{beds}</div>
+        );
     };
 }
