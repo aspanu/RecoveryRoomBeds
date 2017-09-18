@@ -7,10 +7,18 @@ export default class BedList extends React.Component {
             numBeds: 10,
         }
     };
+    reserveBed() {
+        return;
+    };
+    freeBed() {
+        return;
+    };
     render() {
         var beds = []
         for (var i=1; i <= this.props.numBeds; i++) {
-            beds.push(<Bed bedNumber={i}/>);
+            beds.push(
+                <Bed bedNumber={i} reserveBed={this.reserveBed} freeBed={this.freeBed}/>
+            );
         }
 
         return (

@@ -8,7 +8,6 @@ export default class AdminPage extends React.Component {
             <div className="home">
                 <div className="indexPage">
                     <BedList numBeds="10"/> 
-                    <Bed bedNumber="1"/>
                 </div>
             </div>
         );
