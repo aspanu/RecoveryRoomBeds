@@ -31,4 +31,23 @@ This should create all of the transpiled JS into a file called 'bundle.js'. The 
 
 5. Now we just need to run the HTTP server serving our webpage to get this running:
 
+`node_modules/.bin/http-server src/static`
 
+This should now set up a server on http://localhost:8080 which should display the current status of things.
+
+
+## For additional development
+
+1. After changes are made in any source component files, we need to recreate the bundle.js. So we can do this with the same command as above:
+
+`NODE_ENV=production node_modules/.bin/webpack -p`
+
+This checks the webpack.config.js config file and does what it tells it to do in there to create the bundle.js file.
+
+2. We can then re-run the http server to pick up the newest changes:
+
+`node_modules/.bin/http-server src/static`
+
+Note: I am going to be working on an auto-refresh mechanism *soon*, as manually doing these two steps is pretty annoying.
+
+If there is anything else, please feel free to reach out to me.
