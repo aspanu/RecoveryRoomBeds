@@ -49,6 +49,7 @@ This checks the webpack.config.js config file and does what it tells it to do in
 `node_modules/.bin/http-server src/static`
 
 Note: I am going to be working on an auto-refresh mechanism *soon*, as manually doing these two steps is pretty annoying.
+
 Note: I have found that Chrome auto-caches js files annoyingly. So if you are doing this dev with Chrome, you will need to do a complete page refresh (cmd+shift+r) to reload the new bundle.js after restarting the http server. 
 
 If there is anything else, please feel free to reach out to me.
