@@ -35,3 +35,4 @@ chrome-user-data
 babel_cache
 !src/static
 src/static/js/bundle.js
+package-lock.json
