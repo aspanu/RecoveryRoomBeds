@@ -33,3 +33,5 @@ chrome-user-data
 *react*min*.js
 !src/node_modules
 babel_cache
+!src/static
+src/static/js/bundle.js
